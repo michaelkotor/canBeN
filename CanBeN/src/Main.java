@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        boolean m = canBeN(new int[]{1, 2, 1, 2});
+        boolean m = canBeN(new int[]{1, 2, 7, 1});
         System.out.println(m);
 
     }
