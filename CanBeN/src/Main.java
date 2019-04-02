@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        boolean m = canBeN(new int[]{1, 2, 7, 1});
+        boolean m = canBeN(new int[]{1, 3, 4, 6});
+        System.out.println("'Z'");
         System.out.println(m);
 
     }

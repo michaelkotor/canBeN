@@ -1,4 +1,5 @@
 public class Poland {
+    private static double EPS = 0.00000001;
     public static double countABCDxyz(double nums[], String[] list) {
         double temp1 = 0, temp2 = 0, temp3 = 0;
         switch (list[0]) {
@@ -245,9 +246,18 @@ public class Poland {
         temp3 = countABCxyDz(nums, list);
         temp4 = countABxCyDz(nums, list);
         temp5 = countABxCDyz(nums, list);
+
         if (temp1 == N || temp2 == N || temp3 == N || temp4 == N || temp5 == N) {
             return true;
         }
+
+        if (Math.abs(temp1) == N) {return true;}
+        if (Math.abs(temp1) == N) {return true;}
+        if (Math.abs(temp1) == N) {return true;}
+        if (Math.abs(temp1) == N) {return true;}
+        if (Math.abs(temp1) == N) {return true;}
+
+
         return false;
     }
 }
