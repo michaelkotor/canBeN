@@ -2,6 +2,7 @@ public class Poland {
     private static double EPS = 0.00000001;
     public static double countABCDxyz(double nums[], String[] list) {
         double temp1 = 0, temp2 = 0, temp3 = 0;
+
         switch (list[0]) {
             case "+":
                 temp1 = nums[2] + nums[3];
@@ -18,32 +19,39 @@ public class Poland {
         }
         switch (list[1]) {
             case "+":
-                temp2 = temp1 + nums[1];
+                temp2 = nums[1] + temp1;
                 break;
             case "-":
-                temp2 = temp1 - nums[1];
+                temp2 = nums[1] - temp1;
                 break;
             case "*":
-                temp2 = temp1 * nums[1];
+                temp2 = nums[1] * temp1;
                 break;
             case "/":
-                temp2 = temp1 / nums[1];
+                temp2 = nums[1] / temp1;
                 break;
         }
         switch (list[2]) {
             case "+":
-                temp3 = temp2 + nums[0];
+                temp3 = nums[0] + temp2;
                 break;
             case "-":
-                temp3 = temp2 - nums[0];
+                temp3 = nums[0] - temp2;
                 break;
             case "*":
-                temp3 = temp2 * nums[0];
+                temp3 = nums[0] * temp2;
                 break;
             case "/":
-                temp3 = temp2 / nums[0];
+                temp3 = nums[0] / temp2;
                 break;
         }
+
+        /*
+        if (list[0].equals("/") && list[1].equals("-") && list[2].equals("/")) {
+            System.out.println("YES");
+            System.out.println(temp3);
+        }
+        */
         return temp3;
     }
 
@@ -246,18 +254,14 @@ public class Poland {
         temp3 = countABCxyDz(nums, list);
         temp4 = countABxCyDz(nums, list);
         temp5 = countABxCDyz(nums, list);
-
         if (temp1 == N || temp2 == N || temp3 == N || temp4 == N || temp5 == N) {
             return true;
         }
-
         if (Math.abs(temp1) == N) {return true;}
         if (Math.abs(temp1) == N) {return true;}
         if (Math.abs(temp1) == N) {return true;}
         if (Math.abs(temp1) == N) {return true;}
         if (Math.abs(temp1) == N) {return true;}
-
-
         return false;
     }
 }

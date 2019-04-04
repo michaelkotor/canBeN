@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        boolean m = canBeN(new int[]{1, 3, 4, 6});
-        System.out.println("'Z'");
+        boolean m = canBeN(new int[]{4, 3, 2, 1});
+        //N is changed
         System.out.println(m);
-
     }
 
     public static boolean canBeN(int[] nums) {
-        double N = 24;
+        double N = 12;
         String[] list = {"+", "-", "*", "/"};
         double[] array = new double[4];
 
@@ -18,10 +17,7 @@ public class Main {
         double[] tempN = new double[4];
         String[] tempS = new String[3];
         for (int firstNumber = 0; firstNumber < array.length; firstNumber++) {
-
             tempN[0] = array[firstNumber];
-
-
             for (int firstItem = 0; firstItem < list.length; firstItem++) {
                 tempS[0] = list[firstItem];
                 for (int secondNumber = 0; secondNumber < array.length; secondNumber++) {
