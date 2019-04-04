@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.DoubleSummaryStatistics;
 import java.util.Stack;
 
 public class Main {
@@ -66,7 +64,7 @@ public class Main {
         //double[] array = new double[4];
         double N = 24;
 
-        if  (nums.length == 1) {
+        if (nums.length == 1) {
             return Math.abs(nums[0] - N) < 0.0000001;
         }
 
@@ -80,27 +78,36 @@ public class Main {
                     if ((k != i) && (k != j)) {
                         new_nums.add(nums[k]);
                     }
-                    double[] temp_mas;
-                    new_nums.add(nums[i] + nums[j]);
-                    temp_mas = stackToArray(new_nums);
-                    if (python(temp_mas)) {return true;}
-                    new_nums.pop();
-
-                    new_nums.add(nums[i] - nums[j]);
-                    temp_mas = stackToArray(new_nums);
-                    if (python(temp_mas)) {return true;}
-                    new_nums.pop();
-
-                    new_nums.add(nums[i] * nums[j]);
-                    temp_mas = stackToArray(new_nums);
-                    if (python(temp_mas)) {return true;}
-                    new_nums.pop();
-
-                    new_nums.add(nums[i] / nums[j]);
-                    temp_mas = stackToArray(new_nums);
-                    if (python(temp_mas)) {return true;}
-                    new_nums.pop();
                 }
+                double[] temp_mas;
+                new_nums.push(nums[i] + nums[j]);
+                temp_mas = stackToArray(new_nums);
+                if (python(temp_mas)) {
+                    return true;
+                }
+                new_nums.pop();
+
+                new_nums.push(nums[i] - nums[j]);
+                temp_mas = stackToArray(new_nums);
+                if (python(temp_mas)) {
+                    return true;
+                }
+                new_nums.pop();
+
+                new_nums.push(nums[i] * nums[j]);
+                temp_mas = stackToArray(new_nums);
+                if (python(temp_mas)) {
+                    return true;
+                }
+                new_nums.pop();
+
+                new_nums.push(nums[i] / nums[j]);
+                temp_mas = stackToArray(new_nums);
+                if (python(temp_mas)) {
+                    return true;
+                }
+                new_nums.pop();
+
             }
         }
         return false;
