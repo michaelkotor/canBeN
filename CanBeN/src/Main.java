@@ -2,19 +2,19 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        boolean m = canBeN(new int[]{4, 3, 2, 1});
-        boolean n = python(new double[]{1, 1, 2, 2});
+        boolean m = canBeN1(new int[]{24, 0, 0, 0});
+        boolean n = canBeN2(new double[]{1, 2, 1, 1});
         /*
         * Hi, i have made two functions. They both give the same result, but the second one has to take double as a parameter, because
         * it uses recursion.
         * */
         System.out.println(m);
         System.out.println(n);
-        test();
+        //test();
     }
 
-    public static boolean canBeN(int[] nums) {
-        double N = 12;
+    public static boolean canBeN1(int[] nums) {
+        double N = 24;
         String[] list = {"+", "-", "*", "/"};
         double[] array = new double[4];
 
@@ -64,8 +64,14 @@ public class Main {
         return false;
     }
 
-    public static boolean python(double[] nums) {
-        //double[] array = new double[4];
+    public static boolean canBeN2(double[] nums) {
+        /*
+        for (int k = 0; k < nums.length; k++) {
+            System.out.print(nums[k] + " ");
+        }
+        System.out.println();
+        */
+
         double N = 24;
 
         if (nums.length == 1) {
@@ -86,28 +92,28 @@ public class Main {
                 double[] temp_mas;
                 new_nums.push(nums[i] + nums[j]);
                 temp_mas = stackToArray(new_nums);
-                if (python(temp_mas)) {
+                if (canBeN2(temp_mas)) {
                     return true;
                 }
                 new_nums.pop();
 
                 new_nums.push(nums[i] - nums[j]);
                 temp_mas = stackToArray(new_nums);
-                if (python(temp_mas)) {
+                if (canBeN2(temp_mas)) {
                     return true;
                 }
                 new_nums.pop();
 
                 new_nums.push(nums[i] * nums[j]);
                 temp_mas = stackToArray(new_nums);
-                if (python(temp_mas)) {
+                if (canBeN2(temp_mas)) {
                     return true;
                 }
                 new_nums.pop();
 
                 new_nums.push(nums[i] / nums[j]);
                 temp_mas = stackToArray(new_nums);
-                if (python(temp_mas)) {
+                if (canBeN2(temp_mas)) {
                     return true;
                 }
                 new_nums.pop();
@@ -137,7 +143,7 @@ public class Main {
                 numbersI[j] = a;
                 numbersD[j] = (double) a;
             }
-            if (canBeN(numbersI) != python(numbersD)) {
+            if (canBeN1(numbersI) != canBeN2(numbersD)) {
                 System.out.println("In this numbers we have correlation!");
                 for (int k = 0; k < 4; k++) {
                     System.out.print(numbersI[k]);

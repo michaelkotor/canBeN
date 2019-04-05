@@ -254,14 +254,29 @@ public class Poland {
         temp3 = countABCxyDz(nums, list);
         temp4 = countABxCyDz(nums, list);
         temp5 = countABxCDyz(nums, list);
+        /*
         if (temp1 == N || temp2 == N || temp3 == N || temp4 == N || temp5 == N) {
             return true;
         }
-        if (Math.abs(temp1) == N) {return true;}
-        if (Math.abs(temp1) == N) {return true;}
-        if (Math.abs(temp1) == N) {return true;}
-        if (Math.abs(temp1) == N) {return true;}
-        if (Math.abs(temp1) == N) {return true;}
+        */
+
+
+        if (Math.abs(temp1 - N) < 0.0000001) {
+            return true;
+        }
+        if (Math.abs(temp2 - N) < 0.0000001) {
+            return true;
+        }
+        if (Math.abs(temp3 - N) < 0.0000001) {
+            return true;
+        }
+        if (Math.abs(temp4 - N) < 0.0000001) {
+            return true;
+        }
+        if (Math.abs(temp5 - N) < 0.0000001) {
+            return true;
+        }
+
         return false;
     }
 }
