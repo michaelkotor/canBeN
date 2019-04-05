@@ -3,10 +3,14 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
         boolean m = canBeN(new int[]{4, 3, 2, 1});
-        boolean n = python(new double[]{4, 3, 2, 1});
-        //N is changed
+        boolean n = python(new double[]{1, 1, 2, 2});
+        /*
+        * Hi, i have made two functions. They both give the same result, but the second one has to take double as a parameter, because
+        * it uses recursion.
+        * */
         System.out.println(m);
         System.out.println(n);
+        test();
     }
 
     public static boolean canBeN(int[] nums) {
@@ -116,9 +120,33 @@ public class Main {
     public static double[] stackToArray(Stack<Double> stack) {
         double[] temp = new double[stack.size()];
         Stack<Double> ourStack = (Stack<Double>) stack.clone();
-        for (int i = 0; i < ourStack.size(); i++) {
-            temp[0] = ourStack.pop();
+        for (int i = ourStack.size() - 1; i >= 0; i--) {
+            temp[i] = ourStack.pop();
         }
         return temp;
+    }
+
+    public static void test() {
+        int[] numbersI = new int[4];
+        double[] numbersD = new double[4];
+        boolean b;
+
+        for (int i = 0; i < 1000; i++) {
+            for (int  j = 0; j < 4; j++) {
+                int a = Math.round((float)Math.random());
+                numbersI[j] = a;
+                numbersD[j] = (double) a;
+            }
+            if (canBeN(numbersI) != python(numbersD)) {
+                System.out.println("In this numbers we have correlation!");
+                for (int k = 0; k < 4; k++) {
+                    System.out.print(numbersI[k]);
+                }
+                for (int k = 0; k < 4; k++) {
+                    System.out.print(numbersD[k]);
+                }
+            }
+        }
+        System.out.println("I finished!");
     }
 }

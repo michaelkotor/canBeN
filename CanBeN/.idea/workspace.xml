@@ -19,10 +19,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
-              <caret line="119" column="37" lean-forward="true" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+            <state relative-caret-position="1204">
+              <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="55" selection-end-line="135" selection-end-column="55" />
               <folding>
                 <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+                <element signature="method#python#0;class#Main#0" expanded="false" />
+                <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -523,15 +525,15 @@
       <workItem from="1553606630718" duration="18034000" />
       <workItem from="1553846730324" duration="4009000" />
       <workItem from="1554022477304" duration="7453000" />
-      <workItem from="1554354634643" duration="8062000" />
+      <workItem from="1554354634643" duration="14102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45655000" />
+    <option name="totallyTimeSpent" value="51695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="2" width="3866" height="2072" extended-state="0" />
+    <frame x="-14" y="2" width="3866" height="2072" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -544,7 +546,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23677032" sideWeight="0.5010433" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23677032" sideWeight="0.4989567" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23677032" sideWeight="0.4989567" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -604,7 +606,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -619,6 +621,8 @@
           <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="58" />
           <folding>
             <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+            <element signature="method#python#0;class#Main#0" expanded="false" />
+            <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -641,6 +645,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+            <element signature="method#python#0;class#Main#0" expanded="false" />
+            <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,6 +669,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+            <element signature="method#python#0;class#Main#0" expanded="false" />
+            <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,6 +693,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+            <element signature="method#python#0;class#Main#0" expanded="false" />
+            <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -695,6 +705,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+            <element signature="method#python#0;class#Main#0" expanded="false" />
+            <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,10 +732,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="119" column="37" lean-forward="true" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+        <state relative-caret-position="1204">
+          <caret line="135" column="55" lean-forward="false" selection-start-line="135" selection-start-column="55" selection-end-line="135" selection-end-column="55" />
           <folding>
             <element signature="method#canBeN#0;class#Main#0" expanded="false" />
+            <element signature="method#python#0;class#Main#0" expanded="false" />
+            <element signature="method#stackToArray#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
